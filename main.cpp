@@ -3,7 +3,7 @@
 #include <type_traits>
 #include <stdexcept>
 
-class PointCoordIndexOutOfRangeError : std::out_of_range
+class PointCoordIndexOutOfRangeError : public std::out_of_range
 {
 public:
     explicit PointCoordIndexOutOfRangeError()
