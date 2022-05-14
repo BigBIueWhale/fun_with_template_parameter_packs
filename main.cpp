@@ -88,12 +88,6 @@ public:
     }
 };
 
-template <class T, class... Types>
-auto extract_first_typename_from_template_parameter_pack(const T& value, Types&&... param_pack)
-{
-    return value;
-}
-
 template <class FirstArg_T , class... Args_T>
 auto make_point(FirstArg_T&& first_arg, Args_T&&... args)
 {
